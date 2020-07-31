@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="possiblity">Вариант 1</h1>
+      <a href="./card2.html" target="_blank" rel="noopener noreferrer"
+        >Вариант 2 <i class="material-icons">arrow_forward</i></a
+      >
+    </header>
+    <div class="card">
+      <div class="top-section">
+        <img src="img/product1.jpg" alt="product1" id="img-container" />
+        <div class="nav">
+          <img
+            src="img/product1.jpg"
+            onmouseover="changeImg(this)"
+            alt="product1.jpg"
+          />
+          <img
+            src="img/product2.jpg"
+            onmouseover="changeImg(this)"
+            alt="product2.jpg"
+          />
+        </div>
+        <i class="material-icons liked" onclick="favorite(this)">favorite</i>
+      </div>
+
+      <div class="product-info">
+        <h3 class="name">Красная Паприка</h3>
+        <p class="price">
+          от 160 руб.
+        </p>
+
+        <a href="#" class="btn">В корзину</a>
+      </div>
+    </div>
+  </body>
+  <script src="js/main.js" defer></script>
+</html>
