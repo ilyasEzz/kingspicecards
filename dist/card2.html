@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card 2</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/card2.css" />
+  </head>
+  <body>
+    <header class="container">
+      <div class="col m4">
+        <a href="./card1.html" target="_blank" rel="noopener noreferrer">
+          Вариант 1</a
+        >
+      </div>
+      <div class="col m4">
+        Вариант 2
+      </div>
+      <div class="col m4">
+        <a href="./card3.html" target="_blank" rel="noopener noreferrer">
+          Вариант 3</a
+        >
+      </div>
+    </header>
+    <div class="container">
+      <!-- Card 2 -->
+      <div class="card">
+        <div class="card-header">
+          <img src="./img/product1.jpg" alt="product1-1" />
+        </div>
+        <div class="card-body">
+          <span class="tag tag-teal">Новинка</span>
+          <h3>Имбирь молотый сушеный</h3>
+          <p class="price">
+            от 160 руб.
+          </p>
+          <div class="user">
+            <img
+              src="./img/product1.jpg"
+              alt="product1-2"
+              onclick="changeImg(this)"
+            />
+            <img
+              src="./img/product2.jpg"
+              alt="product1-1"
+              onclick="changeImg(this)"
+            />
+          </div>
+          <a href="#" class="btn">В корзину</a>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="card">
+        <div class="card-header">
+          <img src="./img/product1.jpg" alt="product1-1" />
+        </div>
+        <div class="card-body">
+          <span class="tag tag-teal">Новинка</span>
+          <h3>Имбирь молотый сушеный</h3>
+          <p class="price">
+            от 160 руб.
+          </p>
+          <div class="user">
+            <img
+              src="./img/product1.jpg"
+              alt="product1-2"
+              onclick="changeImg(this)"
+            />
+            <img
+              src="./img/product2.jpg"
+              alt="product1-1"
+              onclick="changeImg(this)"
+            />
+          </div>
+          <a href="#" class="btn">В корзину</a>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="card">
+        <div class="card-header">
+          <img src="./img/product1.jpg" alt="product1-1" />
+        </div>
+        <div class="card-body">
+          <span class="tag tag-teal">Новинка</span>
+          <h3>Имбирь молотый сушеный</h3>
+          <p class="price">
+            от 160 руб.
+          </p>
+          <div class="user">
+            <img
+              src="./img/product1.jpg"
+              alt="product1-2"
+              onclick="changeImg(this)"
+            />
+            <img
+              src="./img/product2.jpg"
+              alt="product1-1"
+              onclick="changeImg(this)"
+            />
+          </div>
+          <a href="#" class="btn">В корзину</a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script defer>
+    function changeImg(img) {
+      const mainImg =
+        img.parentNode.parentNode.parentNode.children[0].children[0];
+      mainImg.src = img.src;
+    }
+  </script>
+</html>
