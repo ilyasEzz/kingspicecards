@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+header {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+header h1 {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 2rem;
+}
+header a {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 2rem;
+}
+.card {
+  width: 360px;
+  background-color: #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0px 50px 100px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 50px 100px 0px rgba(0, 0, 0, 0.5);
+}
+.top-section {
+  height: 310px;
+  overflow: hidden;
+  position: relative;
+}
+.top-section .material-icons {
+  width: 40px;
+  height: 40px;
+  font-size: 2rem;
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  right: 0px;
+  color: #eee;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.top-section .material-icons.liked {
+  color: red;
+}
+#img-container {
+  width: 360px;
+  height: 240px;
+  position: relative;
+}
+.nav {
+  text-align: center;
+}
+.nav img {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #ccc;
+  margin: 8px 2px;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.product-info {
+  padding: 1.5rem;
+}
+.product-info .name {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+.product-info .price {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+.btn {
+  display: block;
+  background-color: red;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 2rem;
+}
+.btn:hover {
+  background-color: #c00;
+}
+
+
+@media(max-width 380px) {
+  
+}
