@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Shop Homepage - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <!-- Custom styles for this template -->
+
+    <link href="css/style.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">KINGSPICE</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html"
+                >Главная
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./blog.html">Рецепты</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Каталог</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel -->
+    <section id="showcase">
+      <div id="carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li class="active" data-target="#carousel" data-slide-to="0"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item carousel-image-1 active">
+            <div class="container">
+              <div class="carousel-caption mb-5">
+                <h1>Специи & Пряности</h1>
+                <p>
+                  Пряности со всех уголков мира для истинных гурманов!
+                </p>
+                <a href="#" class="btn btn-primary btn-lg rounded-pill">
+                  Перейти в каталог
+                  <i class="fas fa-arrow-right pl-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel-image-2">
+            <div class="container">
+              <div class="carousel-caption mb-5">
+                <h1>Специи & Пряности</h1>
+                <p>
+                  Пряности со всех уголков мира для истинных гурманов!
+                </p>
+                <a href="#" class="btn btn-primary btn-lg rounded-pill">
+                  Перейти в каталог
+                  <i class="fas fa-arrow-right pl-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel-image-3">
+            <div class="container">
+              <div class="carousel-caption mb-5">
+                <h1>Специи & Пряности</h1>
+                <p>
+                  Пряности со всех уголков мира для истинных гурманов!
+                </p>
+                <a href="#" class="btn btn-primary btn-lg rounded-pill">
+                  Перейти в каталог
+                  <i class="fas fa-arrow-right pl-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a
+          href="#carousel"
+          data-slide="prev"
+          class="carousel-control carousel-control-prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a
+          href="#carousel"
+          data-slide="next"
+          class="carousel-control carousel-control-next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </section>
+    <!-- Page Content -->
+    <div class="container">
+      <!-- New items -->
+      <div class="newItems mt-5">
+        <div class="d-flex justify-content-between">
+          <h3 class="header mx-auto">Самые популярные товары</h3>
+          <div class="chevrons d-none d-md-block" id="chevrons">
+            <i
+              class="fa fa-chevron-circle-left fa-2x owl-next customPrevBtn"
+            ></i>
+            <i class="fa fa-chevron-circle-right fa-2x customNextBtn"></i>
+          </div>
+        </div>
+        <small class="subheader"
+          >Выбор покупателей! Эти товары чаще всего выбирают наши
+          покупатели.</small
+        >
+
+        <div class="owl-carousel" id="popular-items">
+          <div class="item">
+            <div class="card scale">
+              <div class="card-header">
+                <span class="add-to-cart">
+                  <i class="fa fa-shopping-cart"></i>
+                </span>
+                <span class="tag tag-teal">Новинка</span>
+                <img
+                  class="card-main-img"
+                  src="./img/product1.jpg"
+                  alt="product1-1"
+                />
+              </div>
+              <div class="card-body">
+                <h3>Имбирь молотый сушеный</h3>
+                <p class="price">
+                  от 160 руб.
+                </p>
+                <div class="product-gallery">
+                  <img
+                    src="./img/product1.jpg"
+                    alt="product1-2"
+                    onmouseover="changeImg(this)"
+                  />
+                  <img
+                    src="./img/product2.jpg"
+                    alt="product1-1"
+                    onmouseover="changeImg(this)"
+                  />
+                </div>
+                <a href="#" class="btn btn-secondary mx-auto rounded-pill"
+                  >в Корзину</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="card scale">
+              <div class="card-header">
+                <span class="add-to-cart">
+                  <i class="fa fa-shopping-cart"></i>
+                </span>
+                <span class="tag tag-teal">Новинка</span>
+                <img
+                  class="card-main-img"
+                  src="./img/product1.jpg"
+                  alt="product1-1"
+                />
+              </div>
+              <div class="card-body">
+                <h3>Имбирь молотый сушеный</h3>
+                <p class="price">
+                  от 160 руб.
+                </p>
+                <div class="product-gallery">
+                  <img
+                    src="./img/product1.jpg"
+                    alt="product1-2"
+                    onmouseover="changeImg(this)"
+                  />
+                  <img
+                    src="./img/product2.jpg"
+                    alt="product1-1"
+                    onmouseover="changeImg(this)"
+                  />
+                </div>
+                <a href="#" class="btn btn-secondary mx-auto rounded-pill"
+                  >в Корзину</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="card scale">
+              <div class="card-header">
+                <span class="add-to-cart">
+                  <i class="fa fa-shopping-cart"></i>
+                </span>
+                <span class="tag tag-teal">Новинка</span>
+                <img
+                  class="card-main-img"
+                  src="./img/product1.jpg"
+                  alt="product1-1"
+                />
+              </div>
+              <div class="card-body">
+                <h3>Имбирь молотый сушеный</h3>
+                <p class="price">
+                  от 160 руб.
+                </p>
+                <div class="product-gallery">
+                  <img
+                    src="./img/product1.jpg"
+                    alt="product1-2"
+                    onmouseover="changeImg(this)"
+                  />
+                  <img
+                    src="./img/product2.jpg"
+                    alt="product1-1"
+                    onmouseover="changeImg(this)"
+                  />
+                </div>
+                <a href="#" class="btn btn-secondary mx-auto rounded-pill"
+                  >в Корзину</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="card scale">
+              <div class="card-header">
+                <span class="add-to-cart">
+                  <i class="fa fa-shopping-cart"></i>
+                </span>
+                <span class="tag tag-teal">Новинка</span>
+                <img
+                  class="card-main-img"
+                  src="./img/product1.jpg"
+                  alt="product1-1"
+                />
+              </div>
+              <div class="card-body">
+                <h3>Имбирь молотый сушеный</h3>
+                <p class="price">
+                  от 160 руб.
+                </p>
+                <div class="product-gallery">
+                  <img
+                    src="./img/product1.jpg"
+                    alt="product1-2"
+                    onmouseover="changeImg(this)"
+                  />
+                  <img
+                    src="./img/product2.jpg"
+                    alt="product1-1"
+                    onmouseover="changeImg(this)"
+                  />
+                </div>
+                <a href="#" class="btn btn-secondary mx-auto rounded-pill"
+                  >в Корзину</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="card scale">
+              <div class="card-header">
+                <span class="add-to-cart">
+                  <i class="fa fa-shopping-cart"></i>
+                </span>
+                <span class="tag tag-teal">Новинка</span>
+                <img
+                  class="card-main-img"
+                  src="./img/product1.jpg"
+                  alt="product1-1"
+                />
+              </div>
+              <div class="card-body">
+                <h3>Имбирь молотый сушеный</h3>
+                <p class="price">
+                  от 160 руб.
+                </p>
+                <div class="product-gallery">
+                  <img
+                    src="./img/product1.jpg"
+                    F
+                    alt="product1-2"
+                    onmouseover="changeImg(this)"
+                  />
+                  <img
+                    src="./img/product2.jpg"
+                    alt="product1-1"
+                    onmouseover="changeImg(this)"
+                  />
+                </div>
+                <a href="#" class="btn btn-secondary mx-auto rounded-pill"
+                  >в Корзину</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="card scale">
+              <div class="card-header">
+                <span class="add-to-cart">
+                  <i class="fa fa-shopping-cart"></i>
+                </span>
+                <span class="tag tag-teal">Новинка</span>
+                <img
+                  class="card-main-img"
+                  src="./img/product1.jpg"
+                  alt="product1-1"
+                />
+              </div>
+              <div class="card-body">
+                <h3>Имбирь молотый сушеный</h3>
+                <p class="price">
+                  от 160 руб.
+                </p>
+                <div class="product-gallery">
+                  <img
+                    src="./img/product1.jpg"
+                    alt="product1-2"
+                    onmouseover="changeImg(this)"
+                  />
+                  <img
+                    src="./img/product2.jpg"
+                    alt="product1-1"
+                    onmouseover="changeImg(this)"
+                  />
+                </div>
+                <a href="#" class="btn btn-secondary mx-auto rounded-pill"
+                  >в Корзину</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- HR -->
+      <div class="hr-line">
+        <img src="./img/cinnamon.svg" alt="cinnamon icon" width="50" />
+        <div class="hr-line-inner"></div>
+      </div>
+      <!-- Sold -->
+      <div class="newItems mt-5">
+        <div class="d-flex justify-content-between">
+          <h3 class="header mx-auto">Новинки в нашем магазине</h3>
+          <div class="chevrons d-none d-md-block" id="chevrons">
+            <i class="fa fa-chevron-circle-left fa-2x owl-next newPrevBtn"></i>
+            <i class="fa fa-chevron-circle-right fa-2x newNextBtn"></i>
+          </div>
+        </div>
+        <small class="subheader"
+          >Ознакомьтесь с последними новинками в нашем интернет-магазине специй
+          и приправ!
+        </small>
+
+        <div class="owl-carousel" id="new-items">
+          <div class="item">
+            <div class="card scale">
+              <div class="card-header">
+                <span class="add-to-cart">
+                  <i class="fa fa-shopping-cart"></i>
+                </span>
+                <span class="tag tag-teal">Новинка</span>
+                <img
+                  class="card-main-img"
+                  src="./img/product1.jpg"
+                  alt="product1-1"
+                />
+              </div>
+              <div class="card-body">
+                <h3>Имбирь молотый сушеный</h3>
+                <p class="price">
+                  от 160 руб.
+                </p>
+                <div class="product-gallery">
+                  <img
+                    src="./img/product1.jpg"
+                    alt="product1-2"
+                    onmouseover="changeImg(this)"
+                  />
+                  <img
+                    src="./img/product2.jpg"
+                    alt="product1-1"
+                    onmouseover="changeImg(this)"
+                  />
+                </div>
+                <a href="#" class="btn btn-secondary mx-auto rounded-pill"
+                  >в Корзину</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="card scale">
+              <div class="card-header">
+                <span class="add-to-cart">
+                  <i class="fa fa-shopping-cart"></i>
+                </span>
+                <span class="tag tag-teal">Новинка</span>
+                <img
+                  class="card-main-img"
+                  src="./img/product1.jpg"
+                  alt="product1-1"
+                />
+              </div>
+              <div class="card-body">
+                <h3>Имбирь молотый сушеный</h3>
+                <p class="price">
+                  от 160 руб.
+                </p>
+                <div class="product-gallery">
+                  <img
+                    src="./img/product1.jpg"
+                    alt="product1-2"
+                    onmouseover="changeImg(this)"
+                  />
+                  <img
+                    src="./img/product2.jpg"
+                    alt="product1-1"
+                    onmouseover="changeImg(this)"
+                  />
+                </div>
+                <a href="#" class="btn btn-secondary mx-auto rounded-pill"
+                  >в Корзину</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="card scale">
+              <div class="card-header">
+                <span class="add-to-cart">
+                  <i class="fa fa-shopping-cart"></i>
+                </span>
+                <span class="tag tag-teal">Новинка</span>
+
+                <img
+                  class="card-main-img"
+                  src="./img/product1.jpg"
+                  alt="product1-1"
+                />
+              </div>
+              <div class="card-body">
+                <h3>Имбирь молотый сушеный</h3>
+                <p class="price">
+                  от 160 руб.
+                </p>
+                <div class="product-gallery">
+                  <img
+                    src="./img/product1.jpg"
+                    alt="product1-2"
+                    onmouseover="changeImg(this)"
+                  />
+                  <img
+                    src="./img/product2.jpg"
+                    alt="product1-1"
+                    onmouseover="changeImg(this)"
+                  />
+                </div>
+                <a href="#" class="btn btn-secondary mx-auto rounded-pill"
+                  >в Корзину</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="card scale">
+              <div class="card-header">
+                <span class="add-to-cart">
+                  <i class="fa fa-shopping-cart"></i>
+                </span>
+                <span class="tag tag-teal">Новинка</span>
+                <img
+                  class="card-main-img"
+                  src="./img/product1.jpg"
+                  alt="product1-1"
+                />
+              </div>
+              <div class="card-body">
+                <h3>Имбирь молотый сушеный</h3>
+                <p class="price">
+                  от 160 руб.
+                </p>
+                <div class="product-gallery">
+                  <img
+                    src="./img/product1.jpg"
+                    alt="product1-2"
+                    onmouseover="changeImg(this)"
+                  />
+                  <img
+                    src="./img/product2.jpg"
+                    alt="product1-1"
+                    onmouseover="changeImg(this)"
+                  />
+                </div>
+                <a href="#" class="btn btn-secondary mx-auto rounded-pill"
+                  >в Корзину</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="card scale">
+              <div class="card-header">
+                <span class="add-to-cart">
+                  <i class="fa fa-shopping-cart"></i>
+                </span>
+                <span class="tag tag-teal">Новинка</span>
+                <img
+                  class="card-main-img"
+                  src="./img/product1.jpg"
+                  alt="product1-1"
+                />
+              </div>
+              <div class="card-body">
+                <h3>Имбирь молотый сушеный</h3>
+                <p class="price">
+                  от 160 руб.
+                </p>
+                <div class="product-gallery">
+                  <img
+                    src="./img/product1.jpg"
+                    alt="product1-2"
+                    onmouseover="changeImg(this)"
+                  />
+                  <img
+                    src="./img/product2.jpg"
+                    alt="product1-1"
+                    onmouseover="changeImg(this)"
+                  />
+                </div>
+                <a href="#" class="btn btn-secondary mx-auto rounded-pill"
+                  >в Корзину</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="card scale">
+              <div class="card-header">
+                <span class="add-to-cart">
+                  <i class="fa fa-shopping-cart"></i>
+                </span>
+                <span class="tag tag-teal">Новинка</span>
+                <img
+                  class="card-main-img"
+                  src="./img/product1.jpg"
+                  alt="product1-1"
+                />
+              </div>
+              <div class="card-body">
+                <h3>Имбирь молотый сушеный</h3>
+                <p class="price">
+                  от 160 руб.
+                </p>
+                <div class="product-gallery">
+                  <img
+                    src="./img/product1.jpg"
+                    alt="product1-2"
+                    onmouseover="changeImg(this)"
+                  />
+                  <img
+                    src="./img/product2.jpg"
+                    alt="product1-1"
+                    onmouseover="changeImg(this)"
+                  />
+                </div>
+                <a href="#" class="btn btn-secondary mx-auto rounded-pill"
+                  >в Корзину</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- HR -->
+      <div class="hr-line">
+        <img src="./img/spice.svg" alt="spice icon" width="50" />
+        <div class="hr-line-inner"></div>
+      </div>
+      <h3 class="header mx-auto mt-5">Полезные рецепты от KingSpice</h3>
+      <small class="subheader">
+        Здесь мы делимся интересными рецептами и идеями приготовления.
+      </small>
+      <div class="row recepies">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="card">
+            <img src="img/recepie1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Печень с кунжутом</h5>
+              <a href="#" class="btn btn-primary">Читать рецепт</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="card">
+            <img src="img/recepie2.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Салат с тунцом и черным кунжутом</h5>
+              <a href="#" class="btn btn-primary">Читать рецепт</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="card">
+            <img src="img/recepie3.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Печень с кунжутом</h5>
+              <a href="#" class="btn btn-primary">Читать рецепт</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="card">
+            <img src="img/recepie4.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Печень с кунжутом</h5>
+              <a href="#" class="btn btn-primary">Читать рецепт</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Instagram -->
+
+      <h3 class="header mx-auto mt-5">Следите за нами в Instagram</h3>
+      <small class="subheader">
+        #KingSpice
+      </small>
+      <div class="row">
+        <div class="col-lg-3 col-6 p-2 instagram-container">
+          <a
+            href="https://www.instagram.com/p/CDs6ZOzKLCF/"
+            target="_blank"
+            class="insta-img"
+          >
+            <img
+              src="img/instagram-article1.jpg"
+              alt="instagram article"
+              class="img-fluid"
+          /></a>
+        </div>
+        <div class="col-lg-3 col-6 p-2">
+          <a
+            href="https://www.instagram.com/p/CDI3Ja7Kpcg/"
+            target="_blank"
+            class="insta-img"
+          >
+            <img
+              src="img/instagram-article2.jpg"
+              alt="instagram article"
+              class="img-fluid"
+          /></a>
+        </div>
+        <div class="col-lg-3 col-6 p-2">
+          <a
+            href="https://www.instagram.com/p/CDF7l7gKNeE/"
+            target="_blank"
+            class="insta-img"
+          >
+            <img
+              src="img/instagram-article3.jpg"
+              alt="instagram article"
+              class="img-fluid"
+          /></a>
+        </div>
+        <div class="col-lg-3 col-6 p-2">
+          <a
+            href="https://www.instagram.com/p/CC5Lj1fqXp9/"
+            target="_blank"
+            class="insta-img"
+          >
+            <img
+              src="img/instagram-article4.jpg"
+              alt="instagram article"
+              class="img-fluid"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <section class="newslater container">
+      <div class="hr-line">
+        <img src="./img/spice.svg" alt="spice icon" width="50" />
+        <div class="hr-line-inner"></div>
+      </div>
+      <h3 class="header mx-auto mt-5">Подпишитесь на нашу рассылку :)</h3>
+      <small class="subheader">
+        Будьте всегда в курсе специальных предложений!
+      </small>
+      <form>
+        <div class="row">
+          <div class="col-md-4 m-2">
+            <input type="text" class="form-control" placeholder="Имя" />
+          </div>
+          <div class="col-md-4 m-2">
+            <input type="text" class="form-control" placeholder="E-mail" />
+          </div>
+          <div class="col co-md-4">
+            <button type="submit" class="btn btn-block btn-primary m-0">
+              подписатся
+            </button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <!-- /.container -->
+    <!-- Footer -->
+    <footer class="bg-dark pt-2" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-12">
+            <div
+              class="row text-center text-xs-center text-sm-left text-md-left"
+            >
+              <div class="col-xs-12 col-sm-4 col-md-4">
+                <a class="footer-header text-success">Карта Сайта</a>
+                <ul class="list-unstyled quick-links">
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-angle-double-right"></i>Главная</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-angle-double-right"></i>Подарочные
+                      наборы</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-angle-double-right"></i>Рецерты</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-angle-double-right"></i>Доставка и
+                      Оплата</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-angle-double-right"></i>Контакты</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-angle-double-right"></i>Политика
+                      Конфиденциальность</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xs-12 col-sm-4 col-md-4">
+                <a class="footer-header text-success">Каталог</a>
+                <ul class="list-unstyled quick-links">
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-angle-double-right"></i>Пряности &
+                      Специи</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-angle-double-right"></i>Приправы</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-angle-double-right"></i>SUPERFOOD</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-angle-double-right"></i>Декоративные
+                      обсыпки
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-angle-double-right"></i>Маринады
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xs-12 col-sm-4 col-md-4">
+                <a class="footer-header text-success">Каталог</a>
+                <ul class="list-unstyled quick-links">
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-angle-double-right"></i>Консерванты &
+                      Усилители вкуса</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-angle-double-right"></i>Вкусовые
+                      добавки</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-angle-double-right"></i>Загустители</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-angle-double-right"></i>Для колбас и
+                      деликатесов</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xs-12 col-sm-12 col-md-8 offset-md-2 offset-lg-0 col-lg-4 flex-social"
+          >
+            <img src="img/logo-footer.png" alt="KingSpice" />
+            <ul class="list-unstyled list-inline social text-center">
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-vk fa-2x"></i></a>
+              </li>
+            </ul>
+            <a href="tel:+78002018720">8 800 20 187 20 </a>
+          </div>
+        </div>
+        <!-- <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+            <ul class="list-unstyled list-inline social text-center">
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-vk fa-2x"></i></a>
+              </li>
+            </ul>
+          </div>
+          <hr />
+        </div> -->
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
